@@ -1,0 +1,24 @@
+.todoicon{
+    background-color: #24273d;
+    height: 400px;
+    width: 400px;
+    padding: 20px 20px ;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.todoicon button{
+    height: 80px;
+    width: 100%;
+    background-color: #3425ac;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}

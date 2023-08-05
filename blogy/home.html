@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pw Skills Blogs</title>
+    <script src="https://kit.fontawesome.com/6da1da436a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">PWSkills Blog</h1>
+     <i class="fa-solid fa-plus" onclick="displayForm()" ></i>
+    </nav>
+   <div class="content">
+    <Form class="blog-form"> 
+        <input type="file" placeholder="Enter Blog Poster"><br>
+        <input type="text" placeholder="Enter Blog Title" id="title"><br>
+        <input type="text" placeholder="Enter Blog Description" id="description"><br>
+        <textarea placeholder="Enter Blog Content" id="content"></textarea><br>
+       <button type="submit" onclick=addBlogs()>Add Blog</button>
+           </Form>
+          <div class="card-display" id="blogcards">
+          
+          </div>
+   </div>
+    <script src="home.js"></script>
+</body>
+</html>

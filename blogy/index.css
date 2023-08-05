@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+  }
+  
+  .content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .blog-form {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 2px solid black;
+    background-color: #f4f6fe;
+  }
+  .blog-form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+  }
+  .blog-form input,
+  .blog-form textarea
+  {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+  }
+  
+  .blog-form textarea {
+    height: 100px;
+  }
+  
+  .card-display {
+    width: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+
+    max-width: 400px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+  margin-bottom: 20px;
+
+
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card.expanded {
+    max-height: 1000px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .card button {
+    background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  .card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .content-p{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .read-more-content {
+    display: none;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+
+    max-width: 400px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .read-more-content.active {
+    display: block;
+  }
+  
+  .read-more-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .fa-circle-xmark {
+    cursor: pointer;
+  }
+  
